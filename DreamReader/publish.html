@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/DreamReader.css" />
+		<script src="js/jquery-1.11.0.js"></script>
+		<title>新闻超秘</title>
+	</head>
+	<body>
+       <div class="DreamReader">
+	      <header class="nav">
+	     	<div class="logo">
+	           <img src="img/logo.png" alt="" />
+	                          新闻超秘管理系统
+	     	</div>
+	     	<ul class="nav_list">
+	           <li><a class="active" href="publish.html">发文</a></li>
+	           <li><a href="ready.html">备选池</a></li>
+	           <li><a href="essay.html">文章池</a></li>
+	     	</ul>
+	     	<div class="account">
+	     	     欢迎你
+	           <span>admin</span>
+	           <a href="#">退出</a>
+	     	</div>
+	      </header>
+	      <section class="publish_info">
+            <div class="publish_compile">
+              <div class="alert_main">
+                <label class="alert_list">
+               	  <em class="alert_hint">*</em><span  class="alert_topic">文章标题</span>
+               	  <input type="text" class="inp inp_s tet title"/>
+               	  <span class="alert_hint hint_new">内容不能为空</span>
+                </label>
+                <label class="alert_list">
+               	 <p class="check"><em class="alert_hint">*</em><span  class="alert_topic">文章分类</span></p>
+               	 <div class="alert_table table_new">
+       	 			<div class="options options_new">
+	       	 		  <label>
+	       	 			<input type="checkbox"  name="sort" value="0"/>
+	       	 			<span>要闻</span>
+	       	 		  </label>
+	                  <label>
+	       	 			 <input type="checkbox"  name="sort" value="1"/>
+	       	 			 <span>财经</span>
+	       	 		  </label>
+	       	 	      <label>
+	       	 			 <input type="checkbox"  name="sort" value="2"/>
+	       	 			 <span>体育</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="3"/>
+	       	 			 <span>娱乐</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="4"/>
+	       	 			 <span>科技</span>
+	       	 		  </label>
+       	 			</div>
+       	 			<div class="options options_new">
+	       	 		  <label>
+	       	 			<input type="checkbox"  name="sort" value="5"/>
+	       	 			<span>社会</span>
+	       	 		  </label>
+	                  <label>
+	       	 			 <input type="checkbox"  name="sort" value="6"/>
+	       	 			 <span>军事</span>
+	       	 		  </label>
+	       	 	      <label>
+	       	 			 <input type="checkbox"  name="sort" value="7"/>
+	       	 			 <span>国际</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="8"/>
+	       	 			 <span>时尚</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="9"/>
+	       	 			 <span>文化</span>
+	       	 		  </label>
+       	 			</div>
+       	 			<div class="options options_new">
+	       	 		  <label>
+	       	 			<input type="checkbox"  name="sort" value="10"/>
+	       	 			<span>游戏</span>
+	       	 		  </label>
+	                  <label>
+	       	 			 <input type="checkbox"  name="sort" value="11"/>
+	       	 			 <span>星座</span>
+	       	 		  </label>
+	       	 	      <label>
+	       	 			 <input type="checkbox"  name="sort" value="12"/>
+	       	 			 <span>电影</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="13"/>
+	       	 			 <span>教育</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="14"/>
+	       	 			 <span>动漫</span>
+	       	 		  </label>
+       	 			</div>
+               	 </div>
+               	 <span class="alert_hint hint_new" >内容不能为空</span>
+               </label>
+                <label class="alert_list">
+               	  <em class="alert_hint">*</em><span  class="alert_topic">文章来源</span>
+               	  <input type="text" class="inp inp_s tet source"/>
+               	  <span class="alert_hint hint_new">内容不能为空</span>
+                </label>
+                 <label class="alert_list">
+               	   <span class="alert_topic">&nbsp;&nbsp;&nbsp;&nbsp;缩略图</span>
+               	  <input type="text" class="inp inp_s" id="image" disabled="disabled" />
+               	  <p class="img_upload">
+               	  	<em class="show_img"></em>
+               	  	<input type="file" class="file" onchange="document.getElementById('image').value=this.value"/>
+               	 	<span class="btn prev_btn">选择图片</span>
+               	 	<span class="btn upload_btn">预览</span>
+               	  </p>
+                </label>
+                <label class="alert_list clear">
+               	 <p class="check"><em class="alert_hint">*</em><span  class="alert_topic">文章摘要</span></p>
+               	 <textarea class="alert_textarea textarea_new tet summary"></textarea>
+               	 <span class="alert_hint hint_new">内容不能为空</span>
+               	 <p>
+               	 	<span class="gain_digest create_btn create_new">生成摘要</span>
+               	 </p>
+               </label>
+                <label class="alert_list clear">
+               	 <em class="alert_hint">*</em><span  class="alert_topic">摘要语音</span>
+               	 <span class="mp3_s new_mp3s">
+               	 	<img src="img/mp3_s.png" alt="" class="s_music_pic"/>
+               	 </span>
+               	 <p class="section_button clear">
+               	 	<span class="gain_voice create_btn create_new">生成语音</span>
+               	 </p>
+               </label>
+              </div>
+            </div>
+            <div class="publish_text">
+              <textarea class="tet content_text"></textarea>
+               <p class="alert_hint">内容不能为空</p>
+            </div>
+             <div class="alert_btn publish_refer">
+               	 <span class="issue_btn">发布</span>
+               	 <span class="save_btn">保存</span>
+               </div>
+	      </section>
+       </div>
+	</body>
+</html>
+<script type="text/javascript">
+$(function() {
+
+     /*获取发文修改id*/
+      function getUrlParam(name) {
+	    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	    var r = window.location.search.substr(1).match(reg);
+	    if (r != null) return unescape(r[2]); return null;
+	  }
+
+      /*修改发文*/
+	  $.ajax({
+	    type: 'get',
+//	    url: "http://dreamwriter.webdev.com/app/article",
+	    url: "http://localhost:3334/4article",
+	    dataType:'json',
+	    success: function (data) {
+	      oarticleData(data)
+	    },
+	    error: function (msg) {
+	      console.log(msg);
+	    }
+	  });
+
+     function oarticleData(data) {
+        console.log(data.data)
+         var id = getUrlParam("id");
+
+        for(var i=0;i < data.data.articlelist.length ;i++){
+        	var articlelist =  data.data.articlelist[i].id
+//      	console.log(articlelist)
+        	  switch(articlelist) {
+				case id:
+				  $(".title").val(data.data.articlelist[i].title);
+				  $(".source").val(data.data.articlelist[i].source);
+				  $(".summary").val(data.data.articlelist[i].summary);
+                  $(".content_text").val(data.data.articlelist[i].content);
+
+                  /*图片*/
+                  $("#image").val(data.data.articlelist[i].picurl);
+                  var img = document.createElement("img");
+                      img.src = data.data.articlelist[i].picurl;
+                      $(".show_img").append(img)
+
+                  /*分类*/
+                  var channelid= data.data.articlelist[i].channellist;
+
+				 for(var j=0;j<channelid.length;j++) {
+
+		           switch(channelid[j]) {
+				    case '1':
+                      $(".alert_table input:eq(1)").attr("checked", true);
+				     break;
+		            case '2':
+                      $(".alert_table input:eq(2)").attr("checked", true);
+				     break;
+				    case '3':
+                      $(".alert_table input:eq(3)").attr("checked", true);
+				     break;
+				  }
+                 }
+				 break;
+			  }
+        }
+     }
+
+	       /*生成摘要*/
+
+	    $(".gain_digest").bind("click", function() {
+
+         var obj_id = getUrlParam("id");
+
+	       $.ajax({
+		    type: 'get',
+		    //url: "http://dreamwriter.webdev.com/app/summary",
+		    url: "http://localhost:3334/5summary?id="+obj_id+"",
+		    dataType:'json',
+		    success: function (data) {
+
+		      $(".summary").val(data.data.summary);
+		    },
+		    error: function (msg) {
+	          alert(msg)
+		     }
+		   });
+
+	    });
+
+           /*生成语音*/
+
+        $(".gain_voice").bind("click", function() {
+
+            var obj_id = getUrlParam("id");
+        	var summary = $(".summary").val();
+            if(summary != '') {
+              $.ajax({
+			    type: 'post',
+			    //url: "http://dreamwriter.webdev.com/app/voice",
+			    url: "http://localhost:3334/6voice",
+			    dataType:'json',
+			    data: { 
+				  "id": obj_id,
+             "summary": summary
+				},
+			    success: function (data) {
+
+			       console.log(data.data.voiceurl)
+                   $(".s_music_pic").replaceWith('<span class="music_begin"><img src="img/yes_mp3.png" alt="" class="s_music_pic"/> <img src="img/play.png" alt="" class="s_music_btn"/><audio src="Halo.mp3" ></audio></span>')
+
+			    },
+			    error: function (msg) {
+	              alert(msg)
+			     }
+			   });
+            } else {
+               alert("文章摘要不能为空！")
+            }
+        });
+
+        $(".mp3_s").on("click", ".s_music_btn", function() {
+		    $("audio").get(0).play();
+	    })
+
+
+	/*图片上传*/
+	$(".file").change(function() {
+		 $('.show_img img').remove();
+        var file = this.files[0]; //选择上传的文件
+        var r = new FileReader();
+        r.readAsDataURL(file); //Base64
+        $(r).load(function() {
+        $('.show_img').append('<img src="' + this.result + '" alt="" />');
+        });
+    });
+
+    /*图片预览*/
+    $(".upload_btn").bind("click", function() {
+      if($('.show_img img').length == 1) {
+      $('.show_img').fadeIn(500);
+       setTimeout(function() {
+       	 $('.show_img').hide();
+       },5000)
+      }
+    })
+
+
+    function Content() {
+        $(".tet").each(function(index) {
+       	 if($(".tet").eq(index).val() == "") {
+       	 	alert("请完善发文内容！")
+       	 	$(".tet").eq(index).focus();
+       	 	return false;
+       	 }
+       })
+    }
+
+        /*保存内容*/
+
+	    $(".save_btn").bind("click", function() {
+
+             var obj_id = getUrlParam("id");
+        	 var title = $(".title").val();
+        	 var source = $(".source").val();
+        	 var summary = $(".summary").val();
+        	 var content = $(".content_text").val();
+             var picurl  = $("#image").val();
+             var voiceurl = $(".mp3_s audio").attr('src');;
+
+	         var new_channelid="";
+	          $(".alert_table input[name=sort]").each(function() {
+	            if ($(this).is(":checked")) {
+	               new_channelid += $(this).val()+",";
+	             }
+	          });
+	          console.log(title)
+
+	         $.ajax({
+			    type: 'post',
+			    //url: "http://dreamwriter.webdev.com/app/voice",
+			    url: "http://localhost:3334/7save",
+			    dataType:'json',
+			    data: { 
+					  "id": obj_id,
+				   "title": title,
+		  "channelid_list":[new_channelid],
+				  "source": source,
+				  "picurl": picurl,
+	             "summary": summary,
+	            "voiceurl": voiceurl,
+	             "content": content
+			    },
+			    success: function (data) {
+
+			       console.log(data)
+		          if(data.response.message == 'success') {
+				     alert("保存成功!");
+	//				window.location.reload();
+				  }else {
+				     alert("保存失败!");
+				  }
+			    },
+			    error: function (msg) {
+	              alert(msg)
+			     }
+			 });
+	     });
+
+
+     /*发布内容*/
+    $(".issue_btn").bind("click", function() {
+
+  	     var obj_id = getUrlParam("id");
+    	 var title = $(".title").val();
+    	 var source = $(".source").val();
+    	 var summary = $(".summary").val();
+    	 var content = $(".content_text").val();
+         var picurl  = $("#image").val();
+         var voiceurl = $(".mp3_s audio").attr('src');;
+
+         var new_channelid="";
+          $(".alert_table input[name=sort]").each(function() {
+            if ($(this).is(":checked")) {
+               new_channelid += $(this).val()+",";
+             }
+          });
+
+		 $.ajax({
+		    type: 'post',
+		//url: "http://dreamwriter.webdev.com/app/voice",
+		url: "http://localhost:3334/8publish",
+		dataType:'json',
+		data: { 
+			  "idlist": obj_id,
+		       "title": title,
+	  "channelid_list":[new_channelid],
+			  "source": source,
+			  "picurl": picurl,
+			 "summary": summary,
+			"voiceurl": voiceurl,
+			 "content": content
+		},
+		success: function (data) {
+		   console.log(data)
+		  if(data.response.message == 'success') {
+		     alert("发布成功!");
+		//	window.location.reload();
+		  }else {
+		     alert("发布失败!");
+			  }
+		    },
+		    error: function (msg) {
+		      console.log(msg)
+		     }
+		 });
+    })
+})
+
+
+</script>

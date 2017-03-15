@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/json.js"></script>
+		<title></title>
+	</head>
+	<body>
+<button>向页面发送 HTTP POST 请求，并获得返回的结果</button>
+
+<script type="text/javascript">
+$(function(){
+
+//       $.ajax({
+//           type: "POST",
+//           url: "http://dreamwriter.webdev.com/app/importarticle",
+//           data: { 
+//				idlist:["3","4"] 
+//				},
+//           dataType: "json",
+//           success: function(data){
+//              console.log(data)
+//          }
+//       });
+
+
+//$(document).ready(function(){
+//$("button").click(function(){
+//  $.post("http://dreamwriter.webdev.com/app/importarticle",
+//  {
+//   idlist:["3","4"] 
+//  },
+//  function(data,status){
+//    alert("数据：" + data + "\n状态：" + status);
+//  });
+//});
+//});
+
+//http://api.douban.com/book/subjects?q=jave
+
+
+/*2.文章导入接口*/
+//$(document).ready(function(){
+//$("button").click(function(){
+//  $.ajax({
+//  	type: 'get',
+//      url: "http://dreamwriter.webdev.com/app/importarticle",
+//      dataType:'json',
+//      data: { 
+//		  idlist:["3","4"] 
+//			},
+//      success: function (data) {
+//        console.log(data)
+//      },
+//      error: function (msg) {
+//          console.log(msg);
+//      }
+//  });
+//});
+
+
+/*3.备选池文章接口*/
+$(document).ready(function(){
+$("button").click(function(){
+    $.ajax({
+    	type: 'get',
+        url: "http://localhost:3334/9search",
+        dataType:'json',
+        data: { 
+		  idlist:["3","4"] 
+		},
+        success: function (data) {
+          console.log(data)
+        },
+        error: function (msg) {
+            console.log(msg);
+        }
+    });
+});
+});
+
+});
+</script>
+
+</body>
+</html>

@@ -8,16 +8,17 @@
 		<title>新闻超秘</title>
 	</head>
 	<body>
+	   <div class="mask"></div>
        <div class="DreamReader">
           <header class="nav">
          	<div class="logo">
                <img src="img/logo.png" alt="" />
-                              新闻超秘管理系统
+                                        新闻超秘管理系统
          	</div>
          	<ul class="nav_list">
-               <li><a href="#">发文</a></li>
-               <li><a class="active" href="#">备选池</a></li>
-               <li><a href="#">文章池</a></li>
+               <li><a href="publish.html">发文</a></li>
+               <li><a href="ready.html">备选池</a></li>
+               <li><a class="active" href="essay.html">文章池</a></li>
          	</ul>
          	<div class="account">
          	     欢迎你
@@ -28,57 +29,32 @@
           <aside class="sort">
          	<p>文章管理</p>
             <ul class="sort_list">
-           	  <li class="sort_active" data-hash="list1">全部文章</li>
-           	  <li data-hash="list2">宏观经济</li>
-           	  <li data-hash="list3">股票</li>
-              <li data-hash="list4">财报</li>
-           	  <li data-hash="list5">体育</li>
-           	  <li data-hash="list6">娱乐</li>
+           	  <li class="sort_active" data-hash="list0">全部文章</li>
             </ul>
          </aside>
          <section class="seek">
               <input type="search" placeholder="URL/标题关键词" class="search"/>
               <input type="submit" value="搜 索" class="search_btn"/>
          </section>
-         <section class="content all_content"    data-hash="list1">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-                <ul class="main_nav_title essay_nav">
-                	<li><input type="checkbox" class="all_check"/>缩略图</li>
-                	<li>标题</li>
-                	<li>来源</li>
-                	<li>生成时间</li>
-                	<li>概要</li>
-                	<li>正文</li>
-                	<li>发布时间</li>
-                	<li>APP</li>
+         <section class="seek">
+         	<div class="operate">
+            	<span><a href="publish.html">添加文章</a></span>
+            	<span class="remove">删除</span>
+           </div>
+             <ul class="main_nav_title essay_nav" style="background-color: #fff;">
+	            	<li><input type="checkbox" class="all_check"/>缩略图</li>
+	            	<li>标题</li>
+	            	<li>来源</li>
+	            	<li>生成时间</li>
+	            	<li>概要</li>
+	            	<li>正文</li>
+	            	<li>发布时间</li>
+	            	<li>APP</li>
+	            	<li>操作</li>
                 </ul>
-                <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                   <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>体育日报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-            </div>
+         </section>
+         <section class="content all_content"  data-hash="list0">
+            <div class="main_info"> </div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -91,67 +67,8 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content income_content" data-hash="list2">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-              <ul class="main_nav_title essay_nav">
-                <li><input type="checkbox" class="all_check"/>缩略图</li>
-                <li>标题</li>
-                <li>来源</li>
-                <li>生成时间</li>
-                <li>概要</li>
-                <li>正文</li>
-                <li>发布时间</li>
-                <li>APP</li>
-              </ul>
-                 <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一经济日报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                   <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>体育日报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                   <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">地表最强12人 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                   <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">nab 沪指下跌0.66% 下破3000点</li>
-                	<li>体育日报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-            </div>
+         <section class="content income_content" data-hash="list1">
+            <div class="main_info"></div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -164,46 +81,9 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content stock_content"  data-hash="list3">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-              <ul class="main_nav_title essay_nav">
-                <li><input type="checkbox" class="all_check"/>缩略图</li>
-                <li>标题</li>
-                <li>来源</li>
-                <li>生成时间</li>
-                <li>概要</li>
-                <li>正文</li>
-                <li>发布时间</li>
-                <li>APP</li>
-              </ul>
-              <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">股票 沪指下跌0.66% 下破3000点</li>
-                	<li>股票</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">股票 沪指下跌0.66% 下破3000点</li>
-                	<li>体育日报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
+         <section class="content sport_content"  data-hash="list2">
 
-            </div>
+         <div class="main_info"> </div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -216,227 +96,637 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content report_content" data-hash="list4">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
+         <section class="content report_content" data-hash="list3">
+            <div class="main_info"></div>
+            <div class="page">
+            	<span>首页</span>
+            	<span>上一页</span>
+            	<span class="current">1</span>
+            	<span>2</span>
+            	<span>3</span>
+            	<span>4</span>
+            	<span>5</span>
+            	<span>下一页</span>
+            	<span>最后一页</span>
             </div>
-            <div class="main_info">
-               <ul class="main_nav_title essay_nav">
-                <li><input type="checkbox" class="all_check"/>缩略图</li>
-                <li>标题</li>
-                <li>来源</li>
-                <li>生成时间</li>
-                <li>概要</li>
-                <li>正文</li>
-                <li>发布时间</li>
-                <li>APP</li>
-              </ul>
-                <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">财报 沪指下跌0.66% 下破3000点</li>
-                	<li>财报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">股票 沪指下跌0.66% 下破3000点</li>
-                	<li>财报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
+         </section>
+         <section class="content stock_content"  data-hash="list4">
+          <div class="main_info"></div>
+            <div class="page">
+            	<span>首页</span>
+            	<span>上一页</span>
+            	<span class="current">1</span>
+            	<span>2</span>
+            	<span>3</span>
+            	<span>4</span>
+            	<span>5</span>
+            	<span>下一页</span>
+            	<span>最后一页</span>
+            </div>
+         </section>
+         <section class="content recreation_content" data-hash="list5">
+            <div class="main_info"> </div>
+            <div class="page">
+            	<span>首页</span>
+            	<span>上一页</span>
+            	<span class="current">1</span>
+            	<span>2</span>
+            	<span>3</span>
+            	<span>4</span>
+            	<span>5</span>
+            	<span>下一页</span>
+            	<span>最后一页</span>
+            </div>
+         </section>
 
-            </div>
-            <div class="page">
-            	<span>首页</span>
-            	<span>上一页</span>
-            	<span class="current">1</span>
-            	<span>2</span>
-            	<span>3</span>
-            	<span>4</span>
-            	<span>5</span>
-            	<span>下一页</span>
-            	<span>最后一页</span>
-            </div>
-         </section>
-         <section class="content sport_content"  data-hash="list5">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-               <ul class="main_nav_title essay_nav">
-                <li><input type="checkbox" class="all_check"/>缩略图</li>
-                <li>标题</li>
-                <li>来源</li>
-                <li>生成时间</li>
-                <li>概要</li>
-                <li>正文</li>
-                <li>发布时间</li>
-                <li>APP</li>
-              </ul>
-              <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">TNT 沪指下跌0.66% 下破3000点</li>
-                	<li>TNT</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">ESPN 沪指下跌0.66% 下破3000点</li>
-                	<li>ESPN</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">体育 沪指下跌0.66% 下破3000点</li>
-                	<li>体育画报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">体育 沪指下跌0.66% 下破3000点</li>
-                	<li>体育画报</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-            </div>
-            <div class="page">
-            	<span>首页</span>
-            	<span>上一页</span>
-            	<span class="current">1</span>
-            	<span>2</span>
-            	<span>3</span>
-            	<span>4</span>
-            	<span>5</span>
-            	<span>下一页</span>
-            	<span>最后一页</span>
-            </div>
-         </section>
-         <section class="content recreation_content" data-hash="list6">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt=""/>刷新</span>
-            </div>
-            <div class="main_info">
-              <ul class="main_nav_title essay_nav">
-                <li><input type="checkbox" class="all_check"/>缩略图</li>
-                <li>标题</li>
-                <li>来源</li>
-                <li>生成时间</li>
-                <li>概要</li>
-                <li>正文</li>
-                <li>发布时间</li>
-                <li>APP</li>
-              </ul>
-               <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">娱乐 沪指下跌0.66% 下破3000点</li>
-                	<li>腾讯娱乐</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-                 <ul class="main_nav_list essay_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li class="text_info">TNT 沪指下跌0.66% 下破3000点</li>
-                	<li>腾讯娱乐</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li class="out_modify">修改</li>
-                	<li class="text_modify">修改</li>
-                	<li>———</li>
-                	<li class="issue">发布</li>
-                	<p class="show_text"></p>
-                </ul>
-            </div>
-            <div class="page">
-            	<span>首页</span>
-            	<span>上一页</span>
-            	<span class="current">1</span>
-            	<span>2</span>
-            	<span>3</span>
-            	<span>4</span>
-            	<span>5</span>
-            	<span>下一页</span>
-            	<span>最后一页</span>
-            </div>
+         <section class="alter_info">
+         <div class="alter_mask"></div>
+           <div class="alter_head">
+              <span class="alter_title">概要修改</span>
+              <span class="alert_off">&times;</span>
+           </div>
+           <div class="alert_main">
+               <label class="alert_list">
+               	 <em class="alert_hint">*</em><span  class="alert_topic">文章标题</span>
+               	 <input type="text" class="inp tet title"/>
+               	 <span class="alert_hint">内容不能为空</span>
+               </label>
+               <label class="alert_list">
+               	 <p class="check"><em class="alert_hint">*</em><span  class="alert_topic">文章分类</span></p>
+               	 <div class="alert_table">
+       	 			<div class="options">
+	       	 		  <label>
+	       	 			<input type="checkbox"  name="sort"  value="0"/>
+	       	 			<span>要闻</span>
+	       	 		  </label>
+	                  <label>
+	       	 			 <input type="checkbox"  name="sort" value="1"/>
+	       	 			 <span>财经</span>
+	       	 		  </label>
+	       	 	      <label>
+	       	 			 <input type="checkbox"  name="sort" value="2"/>
+	       	 			 <span>体育</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="3"/>
+	       	 			 <span>娱乐</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="4"/>
+	       	 			 <span>科技</span>
+	       	 		  </label>
+       	 			</div>
+       	 			<div class="options">
+	       	 		  <label>
+	       	 			<input type="checkbox"  name="sort" value="5"/>
+	       	 			<span>社会</span>
+	       	 		  </label>
+	                  <label>
+	       	 			 <input type="checkbox"  name="sort" value="6"/>
+	       	 			 <span>军事</span>
+	       	 		  </label>
+	       	 	      <label>
+	       	 			 <input type="checkbox"  name="sort" value="7"/>
+	       	 			 <span>国际</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="8"/>
+	       	 			 <span>时尚</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="9"/>
+	       	 			 <span>文化</span>
+	       	 		  </label>
+       	 			</div>
+       	 			<div class="options">
+	       	 		  <label>
+	       	 			<input type="checkbox"  name="sort" value="10"/>
+	       	 			<span>游戏</span>
+	       	 		  </label>
+	                  <label>
+	       	 			 <input type="checkbox"  name="sort" value="11"/>
+	       	 			 <span>星座</span>
+	       	 		  </label>
+	       	 	      <label>
+	       	 			 <input type="checkbox"  name="sort" value="12"/>
+	       	 			 <span>电影</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="13"/>
+	       	 			 <span>教育</span>
+	       	 		  </label>
+	       	 		  <label>
+	       	 			 <input type="checkbox"  name="sort" value="14"/>
+	       	 			 <span>动漫</span>
+	       	 		  </label>
+       	 			</div>
+               	 </div>
+               	 <span class="alert_hint">内容不能为空</span>
+               </label>
+               <label class="alert_list clear">
+               	 <em class="alert_hint">*</em><span  class="alert_topic">文章来源</span>
+               	 <input type="text" class="inp tet source"/>
+               	 <span class="alert_hint">内容不能为空</span>
+               </label>
+               <label class="alert_list clear">
+               	 <p class="check"><em class="alert_hint">*</em><span  class="alert_topic">文章摘要</span></p>
+               	 <textarea class="alert_textarea tet"></textarea>
+               	 <span class="alert_hint">内容不能为空</span>
+               	 <p class="section_button clear">
+               	 	<span class="gain_digest create_btn">生成摘要</span>
+               	 </p>
+               </label>
+               <label class="alert_list clear">
+               	 <em class="alert_hint">*</em><span  class="alert_topic">摘要语音</span>
+               	 <span class="mp3_s">
+               	 	 <img src="img/no_mp3.png" alt="" class="music_pic"/>
+               	 </span>
+               	 <p class="section_button clear">
+               	 	<span class="gain_voice create_btn">生成语音</span>
+               	 </p>
+               </label>
+               <div class="alert_btn">
+               	 <span class="issue_btn">发布</span>
+               	 <span class="save_btn">保存</span>
+               </div>
+               <div class="issue_win">
+                  <div class="issue_title"><span class="issue_off">&times;</span></div>
+                  <h4>是否保存修改内容？</h4>
+                  <p class="save_win">
+                  	<span class="save_win_save">保存</span>
+                  	<span class="save_win_nosave">不保存</span>
+                  	<span class="call_off">取消</span>
+                  </p>
+               </div>
+
+           </div>
          </section>
        </div>
 	</body>
 </html>
 <script type="text/javascript">
+
    $(function(){
+
+    $(".remove").bind("click",function() {
+    	alert("删除")
+    })
+
+   	/*文章池搜索*/
+
+    $(".search_btn").bind("click", function() {
+      var search_text = $(".search").val();
+      if(search_text != "") {
+      	 $(".all_content .main_info").empty();
+         $(".content").hide();
+
+	      $.ajax({
+	    	type: 'post',
+//	    	url: "http://dreamwriter.webdev.com/app/search",
+	        url: "http://localhost:3334/9search",
+	        dataType:'json',
+	        data: { 
+			  "keyword": search_text,
+	          "articletype":"1" 
+			},
+	        success: function (data) {
+	           searchResult(data)
+	        },
+	        error: function (msg) {
+	           console.log(msg);
+	        }
+	    });
+      }else {
+      	alert("请输入搜索内容！")
+      }
+
+       function searchResult(data) {
+        for(var i=0;i < data.data.articlelist.length ;i++){
+         var essay_main_list = '';
+             essay_main_list += '<ul class="main_nav_list essay_nav_list"><li><input type="hidden" value='+data.data.articlelist[i].id+'><input type="checkbox"  name="sort" /><img src='+data.data.articlelist[i].picurl+' alt="" /></li><li class="text_info">'+data.data.articlelist[i].title+'</li><li>'+data.data.articlelist[i].source+'</li><li>'+data.data.articlelist[i].create_time+'</li><li class="out_modify">修改1</li><li class="text_modify">修改</li><li>'+data.data.articlelist[i].publish_time+'</li><li class="issue">'+data.data.articlelist[i].published+'发布</li><li class="states" >'+data.data.articlelist[i].focused+'置顶</li><p class="show_text">'+data.data.articlelist[i].content+'</p></ul>';
+         $(".all_content").show();
+         $(".all_content .main_info").append(essay_main_list);
+
+        var channelid = data.data.articlelist[i].channelid;
+         switch(channelid) {
+		   case '1':
+		      $(".sort_id").eq(i).text('财经');
+		   break;
+		   case '2':
+		      $(".sort_id").eq(i).text('体育');
+		   break;
+		 }
+       }
+      }
+    });
+
+    /*文章分类*/
+	  $.ajax({
+	    type: 'get',
+	//  url: "http://dreamwriter.webdev.com/app/channel",
+        url:"http://localhost:3334/1channel",
+	    dataType:'json',
+	    success: function (data) {
+	      sideBar(data)
+	    },
+	    error: function (msg) {
+	      console.log(msg);
+	    }
+	  });
+
+     function sideBar(data) {
+      var sort_li = '';
+      for(var i = 0; i < data.data.channellist.length; i++) {
+         sort_li += '<li data-hash="list'+ data.data.channellist[i].id+'">'+ data.data.channellist[i].channelname+'</li>';
+      }
+         $(".sort_list").append(sort_li);
+     }
+
+   	/*文章池*/
+
+	  $.ajax({
+	    type: 'get',
+//	    url: "http://dreamwriter.webdev.com/app/article",
+	    url: "http://localhost:3334/4article",
+	    dataType:'json',
+	    success: function (data) {
+	      oarticleData(data)
+	    },
+	    error: function (msg) {
+	      console.log(msg);
+	    }
+	  });
+
+     function oarticleData(data) {
+    	console.log(data.data)
+      for(var i=0;i < data.data.articlelist.length ;i++){
+          var essay_main_list = '';
+          essay_main_list += '<ul class="main_nav_list essay_nav_list"><li><input type="hidden" value='+data.data.articlelist[i].id+' name="id"><input type="hidden" value='+ data.data.articlelist[i].channellist+' name="channellist"><input type="checkbox"  name="list" /><img src='+data.data.articlelist[i].picurl+' alt="" /></li><li class="text_info">'+data.data.articlelist[i].title+'</li><li>'+data.data.articlelist[i].source+'</li><li>'+data.data.articlelist[i].create_time+'</li><li class="out_modify">修改</li><li class="text_modify"><a href="publish.html?id='+data.data.articlelist[i].id+'">修改</a></li><li>'+data.data.articlelist[i].publish_time+'</li><li class="issue issue_button">'+data.data.articlelist[i].published+'发布</li><li class="states" >'+data.data.articlelist[i].focused+'置顶</li><p class="show_text">'+data.data.articlelist[i].content+'</p></ul>';
+          $(".all_content .main_info").append(essay_main_list);
+
+            var channelid = data.data.articlelist[i].channellist
+
+			for(var j=0;j<channelid.length;j++) {
+	           switch(channelid[j]) {
+			    case '1':
+                   var income =  $(".text_info").eq(i).parent().html();
+		           var incomes = '<ul class="main_nav_list essay_nav_list">'+income+'</ul>';
+		            $(".income_content .main_info").append(incomes);
+			     break;
+	            case '2':
+                   var sport =  $(".text_info").eq(i).parent().html();
+		           var sports = '<ul class="main_nav_list essay_nav_list">'+sport+'</ul>';
+		           $(".sport_content .main_info").append(sports);
+			     break;
+			    case '3':
+                   var report =  $(".text_info").eq(i).parent().html();
+		           var reports = '<ul class="main_nav_list essay_nav_list">'+report+'</ul>';
+		           $(".report_content .main_info").append(reports);
+			     break;
+			  }
+             }
+
+//          var channellist = data.data.articlelist[i].channellist[0];
+//        switch(channellist) {
+//		    case '1':
+//		       var income =  $(".text_info").eq(i).parent().html();
+//		       var incomes = '<ul class="main_nav_list essay_nav_list">'+income+'</ul>';
+//		       $(".income_content .main_info").append(incomes);
+//		      break;
+//		    case '2':
+//		       var sport =  $(".text_info").eq(i).parent().html();
+//		       var sports = '<ul class="main_nav_list essay_nav_list">'+sport+'</ul>';
+//		       $(".sport_content .main_info").append(sports);
+//		      break;
+//		    case '3':
+//		       var report =  $(".text_info").eq(i).parent().html();
+//		       var reports = '<ul class="main_nav_list essay_nav_list">'+report+'</ul>';
+//		       $(".report_content .main_info").append(reports);
+//		      break;
+//	      }
+        }
+     }
+
+
     /*内容区域切换状态*/
- 	 var oDiv = $(".content");
-     var oLi = $(".sort_list li");
-       for(var i=0;i<oLi.length;i++){
-         oLi[i].onclick = function(){
+ 	   var oDiv = $(".content");
+       var oLi = $(".sort_list li");
+      for(var i=0;i<oLi.length;i++){
+       $(document).on('click', ".sort_list li", function() {
           var hash = this.dataset.hash;
            /*哈希值*/
            window.location.hash = hash;
            for(var i=0;i<oLi.length;i++){
-            oDiv[i].style.display  = "none";
+             oDiv[i].style.display  = "none";
               if(hash == oDiv[i].dataset.hash)
                 oDiv[i].style.display  = "block";
             };
-          }
-        }
+       });
+     };
 
     /*页面回车刷新  触发页面*/
-       window.onhashchange = function(){
-         window.location.reload();  /*刷新*/
-       }
+      window.onhashchange = function(){
+        window.location.reload();  /*刷新*/
+      }
     /*得到哈希值*/
-       var firstHash = window.location.hash.substring(1) || "list1";
-         for(var i=0;i<oDiv.length;i++){
-           if(firstHash == oDiv[i].dataset.hash)
-             oDiv[i].style.display  = "block";
-         };
+      var firstHash = window.location.hash.substring(1) || "list0";
+        for(var i=0;i<oDiv.length;i++){
+          if(firstHash == oDiv[i].dataset.hash)
+            oDiv[i].style.display  = "block";
+        };
 
 
-    $('.text_info').each(function(index) {
-      $(this).hover(function(){
-    	var info = $(this).text();
-    	$(".show_text").eq(index).text(info);
+
+
+    $(document).on('mousemove', '.text_info', function(e) {
+      $('.text_info').each(function(index) {
+        $(this).hover(function(){
         $(".show_text").eq(index).stop();
         $(".show_text").eq(index).fadeIn(800);
     },function() {
     	$(".show_text").eq(index).stop();
     	$(".show_text").eq(index).fadeOut(500);
-     });
+      });
+     })
+    });
+
+
+
+
+    /*概要修改*/
+
+	   $(".main_info").on("mouseout",".out_modify", function() {
+	      var modifys = $(".out_modify");
+	      for(var i=0; i<modifys.length; i++){
+	         modifys[i].index = i;
+
+	    	 modifys[i].onclick=function() {
+			   $(".mask").css({
+				 "height": $(document).height(),
+				 "width": $(document).width()
+			   }).show();
+			   $(".alter_info").show();
+
+             /*获取内容*/
+
+              var title = $(this).parent().find('li:eq(1)').text();
+              var source = $(this).parent().find('li:eq(2)').text();
+              var picurl = $(this).parent().find('img').attr('src');
+	    	  var obj_id = $(this).parent().find('input[name=id]').val();
+	    	  var old_channelid = $(this).parent().find('input[name=channellist]').val();
+	    	  var content = $(this).parent().find('p').text();
+
+               /* 多分类选择*/
+	             var channelid= new Array();
+				  channelid=old_channelid.split(",");
+
+				for(var i=0;i<channelid.length;i++) {
+		           switch(channelid[i]) {
+				    case '1':
+                      $(".alert_table input:eq(1)").attr("checked", true);
+				     break;
+		            case '2':
+                      $(".alert_table input:eq(2)").attr("checked", true);
+				     break;
+				    case '3':
+                      $(".alert_table input:eq(3)").attr("checked", true);
+				     break;
+				  }
+                 }
+
+             /*填充内容*/
+	    	  $(".title").val(title);
+			  $(".source").val(source);
+
+            /*生成摘要*/
+
+            $(".gain_digest").bind("click", function() {
+	           $.ajax({
+			    type: 'get',
+			    //url: "http://dreamwriter.webdev.com/app/summary",
+			    url: "http://localhost:3334/5summary?id="+obj_id+"",
+			    dataType:'json',
+			    success: function (data) {
+
+			      $(".alert_textarea").val(data.data.summary);
+			    },
+			    error: function (msg) {
+	              alert(msg)
+			     }
+			   });
+
+            })
+
+            /*生成语音*/
+
+            $(".gain_voice").bind("click", function() {
+            	var summary = $(".alert_textarea").val();
+                if(summary != '') {
+	              $.ajax({
+				    type: 'post',
+				    //url: "http://dreamwriter.webdev.com/app/voice",
+				    url: "http://localhost:3334/6voice",
+				    dataType:'json',
+				    data: { 
+					  "id": obj_id,
+	             "summary": summary
+					},
+				    success: function (data) {
+
+				       //console.log(data.data.voiceurl)
+                       $(".music_pic").replaceWith('<span class="music_begin"><img src="img/yes_mp3.png" alt="" class="music_pic"/> <img src="img/play.png" alt="" class="music_btn"/><audio src="Halo.mp3" ></audio></span>')
+
+				    },
+				    error: function (msg) {
+		              alert(msg)
+				     }
+				   });
+                } else {
+                   alert("文章摘要不能为空！")
+                }
+            })
+
+             /*保存内容*/
+
+            $(".save_btn").bind("click", function() {
+            	var summary = $(this).parent().prev().prev().find("textarea").val();
+                var voiceurl = $(this).parent().prev().find("audio").attr('src');
+
+                saveData(obj_id,title,source,picurl,content,summary,voiceurl)
+
+             });
+
+             /* 修改保存*/
+		    $(".save_win_save").bind("click", function() {
+		    	$(".mask").hide();
+		    	$(".alter_info").hide();
+                var summary = $(this).parent().parent().prev().prev().prev().find("textarea").val();
+                var voiceurl = $(this).parent().parent().prev().prev().find("audio").attr('src');
+                 saveData(obj_id,title,source,picurl,content,summary,voiceurl)
+
+		    })
+
+             /*修改发布内容*/
+            $(".issue_btn").bind("click", function() {
+                issue(obj_id,title,source,picurl,content);
+
+            })
+
+	 	  }
+	    }
+	 })
+	    /*语音播放*/
+     	$(".mp3_s").on("click", ".music_btn", function() {
+		    $("audio").get(0).play();
+	    })
+
+
+        /*直接发布内容*/
+        $(".main_info").bind("click",".issue_button",function() {
+  	 	  var issues= $(".issue_button")
+  	 	   for(var i=0;i<issues.length;i++){
+              issues[i].onclick = function() {
+
+	          	var title = $(this).parent().find('li:eq(1)').text();
+	            var source = $(this).parent().find('li:eq(2)').text();
+	            var picurl = $(this).parent().find('img').attr('src');
+		    	var obj_id = $(this).parent().find('input[name=id]').val();
+		    	var new_channelid = $(this).parent().find('input[name=channellist]').val();
+	            var content = $(this).parent().find('p').text();
+
+                issue(obj_id,title,source,picurl,content);
+
+                console.log(obj_id,title,source,picurl,content)
+
+              }
+  	 	   }
+        })
+
+       /*发布内容封装*/
+       function issue(obj_id,title,source,picurl,content) {
+
+		 var summary = $(this).parent().prev().prev().find("textarea").val();
+		 var voiceurl = $(this).parent().prev().find("audio").attr('src');
+
+		 var new_channelid="";
+		  $(".alert_table input[name=sort]").each(function() {
+		if ($(this).is(":checked")) {
+		   new_channelid += $(this).val()+",";
+		     }
+		  });
+
+		 $.ajax({
+		    type: 'post',
+		//url: "http://dreamwriter.webdev.com/app/voice",
+		url: "http://localhost:3334/8publish",
+		dataType:'json',
+		data: { 
+			  "idlist": obj_id,
+		       "title": title,
+	  "channelid_list":[new_channelid],
+			  "source": source,
+			  "picurl": picurl,
+			 "summary": summary,
+			"voiceurl": voiceurl,
+			 "content": content
+		},
+		success: function (data) {
+		   console.log(data)
+		  if(data.response.message == 'success') {
+		     alert("发布成功!");
+		//	window.location.reload();
+		  }else {
+		     alert("发布失败!");
+			  }
+		    },
+		    error: function (msg) {
+		      console.log(msg)
+		     }
+		 });
+
+      }
+
+       /*保存内容封装*/
+       function saveData(obj_id,title,source,picurl,content,summary,voiceurl){
+
+           var new_channelid="";
+              $(".alert_table input[name=sort]").each(function() {
+                if ($(this).is(":checked")) {
+                   new_channelid += $(this).val()+",";
+                 }
+              });
+	      $.ajax({
+			    type: 'post',
+			    //url: "http://dreamwriter.webdev.com/app/voice",
+			    url: "http://localhost:3334/7save",
+			    dataType:'json',
+			    data: { 
+					  "id": obj_id,
+				   "title": title,
+		  "channelid_list":[new_channelid],
+				  "source": source,
+				  "picurl": picurl,
+	             "summary": summary,
+	            "voiceurl": voiceurl,
+	             "content": content
+			    },
+			    success: function (data) {
+
+			       console.log(data)
+		          if(data.response.message == 'success') {
+				     alert("保存成功!");
+//					     window.location.reload();
+				  }else {
+				     alert("保存失败!");
+				  }
+			    },
+			    error: function (msg) {
+	              alert(msg)
+			     }
+			 });
+	    }
+
+    /*关闭弹出弹窗*/
+
+    $(".alert_off").bind("click", function() {
+    	$(".alter_mask").show();
+    	$(".issue_win").show();
     })
 
-  });
+    $(".issue_off").bind("click", function() {
+    	$(".alter_mask").hide();
+    	$(".issue_win").hide();
+    })
 
+
+   /*取消*/
+    $(".call_off").bind("click", function() {
+        $(".alert_textarea").empty();
+    	$(".mask").hide();
+    	$(".alter_info").hide();
+    	$(".alter_mask").hide();
+    	$(".issue_win").hide();
+
+    })
+
+
+     /* 修改不保存*/
+    $(".save_win_nosave").bind("click", function() {
+    	$(".mask").hide();
+    	$(".alter_info").hide();
+    })
+
+
+    function Content() {
+        $(".tet").each(function(index) {
+       	 if($(".tet").eq(index).val() == "") {
+       	 	alert("修改内容不能为空！")
+       	 	$(".tet").eq(index).focus();
+       	 	return false;
+       	 }
+       })
+    }
+
+
+   })
 </script>

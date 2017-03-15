@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.0.js"></script>
+	</head>
+	<style type="text/css">
+		.img {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			background-image: url(img/close.png);
+			background-position: 10px 20px;
+		}
+	</style>
+	<body>
+
+		   <!--<audio controls="controls">
+			  <source src="Halo.mp3" class="MusicBtn">
+			</audio>-->
+			<audio src="Halo.mp3" ></audio>
+			<input type="button" value="play" class="play"/>
+			<input type="button" value="stop" class="stop"/>
+
+
+
+
+			<span class="img"></span>
+	</body>
+</html>
+<script type="text/javascript">
+	$(".play").click(function() {
+		$("audio").get(0).play();
+	})
+	$(".stop").click(function() {
+		$("audio").get(0).pause();
+	})
+
+
+//      var play=1;
+//      $(".MusicBtn").click(function(){
+//      if(play==0){
+//
+//          $("audio").get(0).play();
+//          play=1;
+//      }else{
+//
+//          play=0;
+//          $("audio").get(0).pause();
+//      }
+//
+//  })
+</script>

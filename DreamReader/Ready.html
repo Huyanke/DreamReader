@@ -15,9 +15,9 @@
                               新闻超秘管理系统
          	</div>
          	<ul class="nav_list">
-               <li><a href="#">发文</a></li>
-               <li><a class="active" href="#">备选池</a></li>
-               <li><a href="#">文章池</a></li>
+               <li><a href="publish.html">发文</a></li>
+               <li><a class="active" href="ready.html">备选池</a></li>
+               <li><a href="essay.html">文章池</a></li>
          	</ul>
          	<div class="account">
          	     欢迎你
@@ -28,82 +28,29 @@
           <aside class="sort">
          	<p>文章管理</p>
             <ul class="sort_list">
-           	  <li class="sort_active" data-hash="list1">全部文章</li>
-           	  <li data-hash="list2">宏观经济</li>
-           	  <li data-hash="list3">股票</li>
-              <li data-hash="list4">财报</li>
-           	  <li data-hash="list5">体育</li>
-           	  <li data-hash="list6">娱乐</li>
+           	  <li class="sort_active" data-hash="list0">全部文章</li>
             </ul>
          </aside>
          <section class="seek">
               <input type="search" placeholder="URL/标题关键词" class="search"/>
               <input type="submit" value="搜 索" class="search_btn"/>
          </section>
-         <section class="content all_content"    data-hash="list1">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
+         <section class="seek">
+         	<div class="operate">
+            	<span class="bulk_import">批量导入</span>
+            	<span class="reload"><img src="img/reload.png" alt="" />刷新</span>
             </div>
-            <div class="main_info">
-                <ul class="main_nav_title ready_nav">
-                	<li><input type="checkbox" class="all_check"/>缩略图</li>
-                	<li>标题</li>
-                	<li>来源</li>
-                	<li>文章分类</li>
-                	<li>生成时间</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                  <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                  <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>第一财经日报</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-
-            </div>
+            <ul class="main_nav_title ready_nav" style="background: #fff;">
+            	<li><input type="checkbox" class="all_check"/>缩略图</li>
+            	<li>标题</li>
+            	<li>来源</li>
+            	<li>文章分类</li>
+            	<li>生成时间</li>
+            	<li>导入</li>
+             </ul>
+         </section>
+         <section class="content all_content" data-hash="list0">
+           <div class="main_info"></div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -116,54 +63,8 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content income_content" data-hash="list2">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-                <ul class="main_nav_title ready_nav">
-                	<li><input type="checkbox" class="all_check" />缩略图</li>
-                	<li>标题</li>
-                	<li>来源</li>
-                	<li>文章分类</li>
-                	<li>生成时间</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>宏观经济</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                 <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>宏观经济</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                 <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>宏观经济</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                 <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>宏观经济</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-
-            </div>
+         <section class="content income_content" data-hash="list1">
+           <div class="main_info"></div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -176,53 +77,8 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content stock_content"  data-hash="list3">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-                <ul class="main_nav_title ready_nav">
-                	<li><input type="checkbox" class="all_check"/>缩略图</li>
-                	<li>标题</li>
-                	<li>来源</li>
-                	<li>文章分类</li>
-                	<li>生成时间</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>股市风云</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>股市风云</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-               <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>股市风云</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-                <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>股市风云</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-            </div>
+         <section class="content sport_content"  data-hash="list2">
+            <div class="main_info"></div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -235,31 +91,8 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content report_content" data-hash="list4">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-                <ul class="main_nav_title ready_nav">
-                	<li><input type="checkbox" class="all_check" />缩略图</li>
-                	<li>标题</li>
-                	<li>来源</li>
-                	<li>文章分类</li>
-                	<li>生成时间</li>
-                	<li>导入</li>
-                </ul>
-
-                 <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li>两市普跌 沪指下跌0.66% 下破3000点</li>
-                	<li>财报</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-
-            </div>
+         <section class="content report_content" data-hash="list3">
+            <div class="main_info"></div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -272,31 +105,8 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content sport_content"  data-hash="list5">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt="" />刷新</span>
-            </div>
-            <div class="main_info">
-                <ul class="main_nav_title ready_nav">
-                	<li><input type="checkbox" class="all_check"/>缩略图</li>
-                	<li>标题</li>
-                	<li>来源</li>
-                	<li>文章分类</li>
-                	<li>生成时间</li>
-                	<li>导入</li>
-                </ul>
-
-                 <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li> 沪指下跌0.66% 下破3000点</li>
-                	<li>体育</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-
-            </div>
+         <section class="content stock_content"  data-hash="list4">
+            <div class="main_info"></div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -309,30 +119,8 @@
             	<span>最后一页</span>
             </div>
          </section>
-         <section class="content recreation_content" data-hash="list6">
-            <div class="operate">
-            	<span>批量导入</span>
-            	<span><img src="img/reload.png" alt=""/>刷新</span>
-            </div>
-            <div class="main_info">
-                <ul class="main_nav_title ready_nav">
-                	<li><input type="checkbox" class="all_check"/>缩略图</li>
-                	<li>标题</li>
-                	<li>来源</li>
-                	<li>文章分类</li>
-                	<li>生成时间</li>
-                	<li>导入</li>
-                </ul>
-                 <ul class="main_nav_list ready_nav_list">
-                	<li><input type="checkbox" /><img src="img/cs.png" alt="" /></li>
-                	<li> 沪指下跌0.66% 下破3000点</li>
-                	<li>娱乐</li>
-                	<li>财经</li>
-                	<li>2016/04/02  08:05:11</li>
-                	<li>导入</li>
-                </ul>
-
-            </div>
+         <section class="content recreation_content" data-hash="list5">
+            <div class="main_info"> </div>
             <div class="page">
             	<span>首页</span>
             	<span>上一页</span>
@@ -348,35 +136,212 @@
        </div>
 	</body>
 </html>
-<script type="text/javascript">
+<script>
+
    $(function(){
+   	/*备选池搜索*/
+    $(".search_btn").bind("click", function() {
+      var search_text = $(".search").val();
+      if(search_text != "") {
+      	 $(".all_content .main_info").empty();
+         $(".content").hide();
+
+	    $.ajax({
+	      type: 'post',
+	      url: "http://localhost:3334/9search",
+	      dataType:'json',
+	      data: { 
+			"keyword": search_text,
+	        "articletype":"0" 
+		  },
+	      success: function (data) {
+	        searchResult(data)
+	      },
+	      error: function (msg) {
+	        console.log(msg);
+	      }
+	    });
+      }else {
+      	alert("请输入搜索内容！")
+      }
+
+     function searchResult(data) {
+       	console.log(data)
+      for(var i=0;i < data.data.articlelist.length ;i++){
+       console.log(data)
+       var ready_main_list = '';
+        ready_main_list += '<ul class="main_nav_list ready_nav_list"><li><input type="checkbox" value='+data.data.articlelist[i].id+'/><img src='+data.data.articlelist[i].picurl+' alt="" /></li><li>'+data.data.articlelist[i].title+'</li><li>'+data.data.articlelist[i].source+'</li><li class="sort_id">'+data.data.articlelist[i].channelid+'</li><li>'+data.data.articlelist[i].create_time+'</li><li>导入</li></ul>';
+        $(".all_content").show();
+        $(".all_content .main_info").append(ready_main_list);
+
+        var channelid = data.data.articlelist[i].channelid;
+         switch(channelid) {
+		   case '1':
+		      $(".sort_id").eq(i).text('财经');
+		   break;
+		   case '2':
+		      $(".sort_id").eq(i).text('体育');
+		   break;
+		 }
+       }
+      }
+    });
+
+    /*文章分类*/
+	  $.ajax({
+	    type: 'get',
+	//  url: "http://dreamwriter.webdev.com/app/channel",
+        url:"http://localhost:3334/1channel",
+	    dataType:'json',
+	    success: function (data) {
+	      sideBar(data)
+	    },
+	    error: function (msg) {
+	      console.log(msg);
+	    }
+	   });
+
+     function sideBar(data) {
+      var sort_li = '';
+      for(var i = 0; i < data.data.channellist.length; i++) {
+         	sort_li += '<li data-hash="list'+ data.data.channellist[i].id+'">'+ data.data.channellist[i].channelname+'</li>';
+         }
+        $(".sort_list").append(sort_li);
+     }
+
+   	/*备选池*/
+	  $.ajax({
+	    type: 'get',
+	    url: "http://localhost:3334/3oarticle",
+	    dataType:'json',
+	    success: function (data) {
+	      oarticleData(data)
+	    },
+	    error: function (msg) {
+	        console.log(msg);
+	     }
+	  });
+
+
+     function oarticleData(data) {
+    	console.log(data)
+       for(var i=0;i < data.data.articlelist.length ;i++){
+        var ready_main_list = '';
+
+        ready_main_list += '<ul class="main_nav_list ready_nav_list"><li><input type="hidden" value='+data.data.articlelist[i].id+' /><input type="checkbox" name="sort"/><img src='+data.data.articlelist[i].picurl+' alt="" /></li><li>'+data.data.articlelist[i].title+'</li><li>'+data.data.articlelist[i].source+'</li><li class="sort_id">'+data.data.articlelist[i].channelid+'</li><li>'+data.data.articlelist[i].create_time+'</li><li class="import">导入</li></ul>';
+        $(".all_content .main_info").append(ready_main_list)
+
+    	var channelid = data.data.articlelist[i].channelid;
+          switch(channelid) {
+		    case '1':
+		      $(".sort_id").eq(i).text('财经');
+		      var income =  $(".sort_id").eq(i).parent().html();
+		      var incomes = '<ul class="main_nav_list ready_nav_list">'+income+'</ul>';
+		      $(".income_content .main_info").append(incomes);
+		     break;
+		    case '2':
+		      $(".sort_id").eq(i).text('体育');
+		      var sport =  $(".sort_id").eq(i).parent().html();
+		      var sports = '<ul class="main_nav_list ready_nav_list">'+sport+'</ul>';
+		      $(".sport_content .main_info").append(sports);
+		     break;
+		    case '3':
+		      $(".sort_id").eq(i).text('其他');
+		      var report =  $(".sort_id").eq(i).parent().html();
+		      var reports = '<ul class="main_nav_list ready_nav_list">'+report+'</ul>';
+		      $(".report_content .main_info").append(reports);
+		     break;
+	      }
+        }
+      }
+
+    /*备选池文章导入*/
+    $(".main_info").on("mouseout",".import", function() {
+          var imports = $(".import");
+          for(var i=0; i<imports.length; i++){
+             imports[i].index = i;
+        	 imports[i].onclick=function() {
+        	 var ids = $(this).parent().find('input').val();
+             import_list(ids);
+
+     	  }
+        }
+     })
+
+    /*批量导入*/
+
+    $(".all_check").bind("click", function() {
+
+    });
+
+    $(".bulk_import").bind("click",function() {
+      var ids = "";
+      $(".main_info input[name=sort]").each(function() {
+         if ($(this).is(":checked")) {
+               ids += $(this).prev().val()+",";
+            }
+          });
+        if(ids.length > 0){
+        	import_list(ids);
+        }
+
+    })
+
+    /*导入封装*/
+    function import_list(ids) {
+    	 $.ajax({
+		    type: 'post',
+		    //url: "http://dreamwriter.webdev.com/app/importarticle",
+		    url: "http://localhost:3334/2importarticle",
+		    dataType:'json',
+		    data: { 
+			  idlist:[ids]
+			},
+		    success: function (data) {
+
+		      if(data.response.message == 'success') {
+		         alert("导入成功!");
+		         window.location.reload();
+		      }else {
+		      	 alert("导入失败!");
+		      }
+
+		    },
+		    error: function (msg) {
+		    	console.log(msg)
+		     }
+		   });
+    }
     /*内容区域切换状态*/
  	 var oDiv = $(".content");
      var oLi = $(".sort_list li");
-       for(var i=0;i<oLi.length;i++){
-         oLi[i].onclick = function(){
+      for(var i=0;i<oLi.length;i++){
+       $(".sort").on('click', ".sort_list li", function() {
           var hash = this.dataset.hash;
            /*哈希值*/
            window.location.hash = hash;
            for(var i=0;i<oLi.length;i++){
-            oDiv[i].style.display  = "none";
+             oDiv[i].style.display  = "none";
               if(hash == oDiv[i].dataset.hash)
                 oDiv[i].style.display  = "block";
             };
-          }
+         })
         }
 
     /*页面回车刷新  触发页面*/
        window.onhashchange = function(){
          window.location.reload();  /*刷新*/
-       }
+       };
     /*得到哈希值*/
-       var firstHash = window.location.hash.substring(1) || "list1";
+       var firstHash = window.location.hash.substring(1) || "list0";
          for(var i=0;i<oDiv.length;i++){
            if(firstHash == oDiv[i].dataset.hash)
              oDiv[i].style.display  = "block";
          };
 
-  });
+       $(".reload").bind("click",function() {
+       	  self.location.reload();
+       })
 
+  });
 </script>
