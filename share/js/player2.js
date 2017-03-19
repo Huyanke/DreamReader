@@ -1,3 +1,6 @@
+$(function(){
+	
+
 var x,
 	sc = $(window).width() / 640,
 	isPlay = false,
@@ -7,7 +10,9 @@ var x,
 	value = 0,
 	$cover = $('.cover'),
 
-	$scale = $('#scale'),
+//	$scale = $('#scale'),
+    $a = $(".ui-btn"),
+	$scale = $('#points'),
     $playMusic = $('#play'),
 	$voice = $('voice'),
 	$music=$('#music'),
@@ -27,7 +32,6 @@ $playMusic.on('click', function() {
 function iplay() {
 	$('.stop').show();
 	$('.play').hide();
-	$(".header").addClass("animation")
 	$scale.attr('max', music.duration);
 	max = Math.round(music.duration);
 
@@ -40,42 +44,41 @@ function iplay() {
 		console.log("歌曲时长：" + max + "~~~~~~~现在的时间：" + value);
 		/*判断歌曲是否播放结束*/
 
-     var audio = document.getElementById("music")
-          
-     audio.addEventListener('timeupdate',function(){
-         if (!isNaN(audio.duration)) {
-         var progressValue = audio.currentTime / audio.duration * 560;
-         var width = parseInt(progressValue) /20 + 'rem';
-         
-            $(".extent").text(width)
-            $(".shadow").css("width",width);
-         }
-        })   
- 
+      $('#points').trigger("change")
+
 		if (value == max) {
 			console.log("播放结束");
-
 		}
 	}, 500);
 };
 
-$scale.on('change', function() {
-//	$(".shadow").css({"width":value / 5 +'rem'})
+//$scale.on('change', function() {
+//	progress = $scale.val();
+//	music.currentTime = progress;
+//});
+
+   $('#points').on('change', function() {});
+////			progress = $scale.val();
+////			music.currentTime = progress;
+//        console.log("mmm")
+
+
+
+
+$a.on('touchend', function() {
 	progress = $scale.val();
 	music.currentTime = progress;
-	
 });
 
 /*暂停状态*/
 function nplay() {
-
 	$('.stop').hide();
 	$('.play').show();
-    $(".header").removeClass("animation")
+
 	music.pause();
 	isPlay = false;
 	clearInterval(x);
 	console.log(123);
-}; 
-      
-	
+};
+
+})

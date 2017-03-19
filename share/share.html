@@ -7,13 +7,18 @@
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/share.css"/>
-		<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<script src="js/jquery-1.11.0.js"></script>
-        <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	</head>
 	<body>
        <div class="share">
-         <header class="header">454554</header>
+         <header class="header">
+         	<img src="img/1.png" alt="" />
+         	<img src="img/2.png" alt="" />
+         	<img src="img/3.png" alt="" />
+         	<img src="img/4.png" alt="" />
+         	<img src="img/5.png" alt="" />
+         	<img src="img/6.png" alt="" />
+         </header>
          <section class="section">
            <div class="message">
              <span class="robot">Dreamwriter机器人写作</span>
@@ -34,8 +39,10 @@
 		      	<img src="img/stop.png" alt="" class="stop"/>
 		      </div>
 		      <div class="music-nav">
-		        <!--<input type="range" min="0" max="0" step="0.4" value="0" id="scale">-->
-		        <input type="range" name="points" id="points" step="0.4" value="0" min="0" max="100" data-highlight="true">
+		      	 <div class="play_ui">
+		          <input type="range" min="0" max="0" step="0.4" value="0" id="scale">
+		          <div class="shadow"></div>
+		      	 </div>
 		      </div>
 		      <audio src="Halo.mp3" id="music"></audio>
 		   </div>
@@ -48,6 +55,7 @@
        </div>
 	</body>
 </html>
+<script src="js/player.js"></script>
 <script type="text/javascript">
 	//	屏幕自适应
 	var html = document.getElementsByTagName("html")[0];
@@ -63,6 +71,7 @@
 		  html.style.fontSize = getSize() + "px";
 	    }, 100);
 	};
-
+          
 </script>
-<script src="js/player.js"></script>
+
+
