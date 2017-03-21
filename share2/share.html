@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>新闻超秘</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/share.css"/>
+		<script src="js/jquery-1.11.0.js"></script>
+	</head>
+	<body>
+       <div class="share">
+         <header class="header">
+         	<img src="img/1.png" alt="" />
+         	<img src="img/2.png" alt="" />
+         	<img src="img/3.png" alt="" />
+         	<img src="img/4.png" alt="" />
+         	<img src="img/5.png" alt="" />
+         	<img src="img/6.png" alt="" />
+         </header>
+         <section class="section">
+           <div class="message">
+             <span class="robot">Dreamwriter机器人写作</span>
+             <span class="time"><em class="old_range">3小时前</em><em class="extent">0:48</em></span>
+             <div class="new_text">
+		                 农业部：转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，
+		                 转基因是传统育种技术的延伸发展，安全性是可控有保证的。
+		                 目前世界上没有发现一例被证实的转基因食品安全性问题。
+		                 转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，转基因是传统育
+                                 农业部：转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，
+		                 转基因是传统育种技术的延伸发展，安全性是可控有保证的。
+		                 目前世界上没有发现一例被证实的转基因食品安全性问题。
+             </div>
+           </div>
+           <div class="radio">
+		      <div class="cover" id="play">
+		      	<img src="img/play.png" alt="" class="play"/>
+		      	<img src="img/stop.png" alt="" class="stop"/>
+		      </div>
+		      <div class="music-nav">
+		      	 <div class="play_ui">
+		          <input type="range" min="0" max="0" step="0.4" value="0" id="scale">
+		          <div class="shadow"></div>
+		      	 </div>
+		      </div>
+		      <audio src="Halo.mp3" id="music"></audio>
+		   </div>
+         </section>
+         <footer class="footer">
+         	<img src="img/head_s.png" alt="" />
+         	<span >新闻超秘，为您量身定制的私人新闻秘书！</span>
+         	<a href="#">打开看看</a>
+         </footer>
+       </div>
+	</body>
+</html>
+<script src="js/player.js"></script>
+<script type="text/javascript">
+	//	屏幕自适应
+	var html = document.getElementsByTagName("html")[0];
+
+	function getSize() {
+		var width = document.documentElement.clientWidth || document.body.clientWidth;
+		var fontSize = (20 / 750) * width;
+		return fontSize;
+	}
+	html.style.fontSize = getSize() + "px";
+	window.onresize = function() {
+	    setTimeout(function() {
+		  html.style.fontSize = getSize() + "px";
+	    }, 100);
+	};
+        
+
+    var height = window.body.clientHeight / 20 + 'rem';
+     $(".share").css("height",height);
+</script>
+
+
