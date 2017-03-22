@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<title>领取福利</title>
+	</head>
+	<body>
+	   <div class="hulai sorry">
+         <div class="column">
+             <p>不过您也可以：</p>
+             <p><a href="#">逛逛呼来小店，姨妈神器就在这里~</a></p>
+             <p><a href="#">看历史消息，跟呼小妹一起赶跑痛经君！</a></p>
+         </div>
+
+         <footer class="footer">
+            <p>&nbsp;&nbsp;&nbsp;让你的例假轻松得就像度假！</p>
+            <p>copyright @ 呼来健康</p>
+         </footer>
+	   </div>
+
+	</body>
+</html>
+<script type="text/javascript">
+  //	屏幕自适应
+	var html = document.getElementsByTagName("html")[0];
+
+	function getSize() {
+		var width = document.documentElement.clientWidth || document.body.clientWidth;
+		var fontSize = (20 / 750) * width;
+		return fontSize;
+	}
+	html.style.fontSize = getSize() + "px";
+	window.onresize = function() {
+	    setTimeout(function() {
+		  html.style.fontSize = getSize() + "px";
+	    }, 100);
+	};
+
+    //var height = window.clientHeight / 20 + 'rem';
+     var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+     $(".hulai").css("height",height);
+
+</script>

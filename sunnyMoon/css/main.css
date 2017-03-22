@@ -1,0 +1,208 @@
+html {
+  width: 100%;
+  font-size: 20px;
+}
+body {
+
+  font-family: arial,"微软雅黑";
+
+}
+input {
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color:transparent;
+}
+::-webkit-input-placeholder {
+  color:#f0f0f0 !important;
+}
+.hulai {
+  width: 100%;
+  min-height: 60rem;
+  background-size: 100% 100%;
+  position: relative;
+}
+.login {
+  background-image: url(../img/login_bg.png);
+}
+.draw {
+  background-image: url(../img/draw_bg.png);
+}
+.sorry {
+  background-image: url(../img/sorry.png);
+}
+.message {
+  margin: 0 auto;
+  width: 21.5rem;
+  padding-top: 75%;
+}
+.text {
+  width: 22rem;
+  height: 5rem;
+  background-image: url(../img/input.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+.text img {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+  width: 1.65rem;
+  height: 2.85rem;
+
+}
+.text input {
+  position: absolute;
+  top: 22%;
+  left: 15%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0 0.5rem;
+
+
+}
+.phone input {
+  width: 16rem;
+}
+.verify input {
+  width: 6.5rem;
+}
+.verify button {
+  position: absolute;
+  top: 23%;
+  right: 0;
+  height: 2.5rem;
+  width: 7rem;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+}
+.hint {
+  width: 21.5rem;
+  height: 4.2rem;
+}
+.hint p {
+  display: none;
+  color: #c13246;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.sub_btn {
+  width: 21.5rem;
+  height: 4.1rem;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color:transparent;
+}
+.sub_btn img {
+  vertical-align:middle;
+  width: 14.5rem;
+  height: 4.1rem;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6.5rem;
+  text-align: center;
+}
+.footer p:nth-of-type(1){
+  color: #c13246;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.footer p:nth-of-type(2) {
+  color: #525252;
+  font-size: 1.1rem;
+  line-height: 4rem;
+}
+
+
+.draw_info {
+  margin: 0 auto;
+  width: 28.65rem;
+}
+.head {
+  padding-top: 10rem;
+}
+.main_code {
+  margin: 0 auto;
+  width: 21.5rem;
+  height: 7rem;
+  color: #f88e9a;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 7rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+.msg p{
+  margin-top: 0.4rem;
+  color: #323232;
+  font-size: 1.1rem;
+  text-align: center;
+
+}
+.guild {
+  margin-top: 2rem;
+}
+.guild p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.mode {
+  margin-top: 2rem;
+}
+.mode p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.note {
+  color: #c93b4b;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.note img {
+  width: 4.5rem;
+  height: 4.25rem;
+  vertical-align:middle;
+}
+.friendlink {
+	text-align: center;
+}
+.friendlink a {
+  color: #000;
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+.column {
+  margin: 0 auto;
+  width: 28.65rem;
+  padding-top: 21rem;
+}
+.column p {
+  margin-bottom: 3.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.column p a{
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
