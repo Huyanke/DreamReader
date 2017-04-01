@@ -98,8 +98,8 @@ $(window).load(function(){
 	   /*文章分类*/
 	  $.ajax({
 	    type: 'get',
-	    url: "http://dreamwriter.webdev.com/app/channel",
-//      url:"http://localhost:3334/1channel",
+//	    url: "http://dreamwriter.webdev.com/app/channel",
+        url:"http://localhost:3334/1channel",
 	    dataType:'json',
 	    success: function (data) {
 	      sideBar(data)
@@ -169,8 +169,8 @@ $(window).load(function(){
 
 	    $.ajax({
 	      type: 'post',
-//	      url: "http://localhost:3334/9search",
-	      url: "http://dreamwriter.webdev.com/app/search",
+	      url: "http://localhost:3334/9search",
+//	      url: "http://dreamwriter.webdev.com/app/search",
 	      dataType:'json',
 	      data: JSON.stringify(JsonData),
 	      success: function (data) {
@@ -209,8 +209,8 @@ $(window).load(function(){
    	/*备选池*/
 	  $.ajax({
 	    type: 'get',
-//	    url: "http://localhost:3334/3oarticle",
-        url: "http://dreamwriter.webdev.com/App/oarticle",
+	    url: "http://localhost:3334/3oarticle",
+//      url: "http://dreamwriter.webdev.com/App/oarticle",
 	    dataType:'json',
 	    success: function (data) {
 	      oarticleData(data)
@@ -254,8 +254,8 @@ $(window).load(function(){
       };
     	$.ajax({
 		  type: 'post',
-		  url: "http://dreamwriter.webdev.com/app/importarticle",
-//		  url: "http://localhost:3334/2importarticle",
+//		  url: "http://dreamwriter.webdev.com/app/importarticle",
+		  url: "http://localhost:3334/2importarticle",
 		  dataType:'json',
 		  data:JSON.stringify(JsonData),
 		  success: function (data) {
@@ -311,8 +311,8 @@ $(window).load(function(){
       };
     	$.ajax({
 		  type: 'post',
-		  url: "http://dreamwriter.webdev.com/app/importarticle",
-//		  url: "http://localhost:3334/2importarticle",
+//		  url: "http://dreamwriter.webdev.com/app/importarticle",
+		  url: "http://localhost:3334/2importarticle",
 		  dataType:'json',
 		  data:JSON.stringify(JsonData),
 		  success: function (data) {

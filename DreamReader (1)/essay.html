@@ -276,8 +276,8 @@ $(window).load(function(){
 
 		$.ajax({
 	    	type: 'post',
-	    	url: "http://dreamwriter.webdev.com/app/deletearticle",
-//	        url: "http://localhost:3334/10deletearticel",
+//	    	url: "http://dreamwriter.webdev.com/app/deletearticle",
+	        url: "http://localhost:3334/10deletearticel",
 	        dataType:'json',
 	        data: JSON.stringify(JsonData),
 	        success: function (data) {
@@ -324,8 +324,8 @@ $(window).load(function(){
 		  }
 	      $.ajax({
 	    	type: 'post',
-	    	url: "http://dreamwriter.webdev.com/app/search",
-//	        url: "http://localhost:3334/9search",
+//	    	url: "http://dreamwriter.webdev.com/app/search",
+	        url: "http://localhost:3334/9search",
 	        dataType:'json',
 	        data: JSON.stringify(JsonData),
 	        success: function (data) {
@@ -408,8 +408,8 @@ $(window).load(function(){
     /*文章分类*/
 	  $.ajax({
 	    type: 'get',
-	    url: "http://dreamwriter.webdev.com/app/channel",
-//      url:"http://localhost:3334/1channel",
+//	    url: "http://dreamwriter.webdev.com/app/channel",
+        url:"http://localhost:3334/1channel",
 	    dataType:'json',
 	    success: function (data) {
 	      sideBar(data)
@@ -437,8 +437,8 @@ $(window).load(function(){
 
     $.ajax({
 	  type: 'get',
-//	  url: "http://localhost:3334/4article",
-      url: "http://dreamwriter.webdev.com/App/oarticle",
+	  url: "http://localhost:3334/4article",
+//    url: "http://dreamwriter.webdev.com/App/oarticle",
 	  dataType:'json',
 	  success: function (data) {
 	    oarticleData(data)
@@ -553,8 +553,8 @@ $(window).load(function(){
                 if(summary != '') {
 	              $.ajax({
 				    type: 'post',
-				    url: "http://dreamwriter.webdev.com/app/voice",
-//				    url: "http://localhost:3334/6voice",
+//				    url: "http://dreamwriter.webdev.com/app/voice",
+				    url: "http://localhost:3334/6voice",
 				    dataType:'json',
 				    data: JSON.stringify(JsonData),
 				    success: function (data) {
@@ -699,8 +699,8 @@ $(window).load(function(){
 
 		    $.ajax({
 		      type: 'post',
-			  url: "http://dreamwriter.webdev.com/app/publish",
-//			  url: "http://localhost:3334/8publish",
+//			  url: "http://dreamwriter.webdev.com/app/publish",
+			  url: "http://localhost:3334/8publish",
 			  dataType:'json',
 			  data: JSON.stringify(JsonData2),
 			  success: function (data) {
@@ -731,8 +731,8 @@ $(window).load(function(){
                console.log(obj_id)
 		       $.ajax({
 		    	 type: 'get',
-			     url: "http://dreamwriter.webdev.com/app/focus?id="+obj_id,
-//		         url: "http://localhost:3334/11focus?id="+obj_id,
+//			     url: "http://dreamwriter.webdev.com/app/focus?id="+obj_id,
+		         url: "http://localhost:3334/11focus?id="+obj_id,
 		         dataType:'json',
 		         success: function (data) {
 		           console.log(data)
@@ -830,8 +830,8 @@ $(window).load(function(){
 
 	      $.ajax({
 			    type: 'post',
-			    url: "http://dreamwriter.webdev.com/app/save",
-//			    url: "http://localhost:3334/7save",
+//			    url: "http://dreamwriter.webdev.com/app/save",
+			    url: "http://localhost:3334/7save",
 			    dataType:'json',
 			    data: JSON.stringify(JsonData2),
 			    success: function (data) {

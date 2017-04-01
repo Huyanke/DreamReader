@@ -130,8 +130,8 @@ $(function() {
 	  /*文章分类*/
 	  $.ajax({
 	    type: 'get',
-	    url: "http://dreamwriter.webdev.com/app/channel",
-//      url:"http://localhost:3334/1channel",
+//	    url: "http://dreamwriter.webdev.com/app/channel",
+        url:"http://localhost:3334/1channel",
 	    dataType:'json',
 	    success: function (data) {
 	      sideBar(data)
@@ -160,8 +160,8 @@ $(function() {
       /*修改发文*/
 	  $.ajax({
 	    type: 'get',
-	    url: "http://dreamwriter.webdev.com/app/article",
-//	    url: "http://localhost:3334/4article",
+//	    url: "http://dreamwriter.webdev.com/app/article",
+	    url: "http://localhost:3334/4article",
 	    dataType:'json',
 	    success: function (data) {
 	      oarticleData(data)
@@ -240,8 +240,8 @@ $(function() {
 
 	       $.ajax({
 		    type: 'post',
-		    url: "http://dreamwriter.webdev.com/app/summary",
-//		    url: "http://localhost:3334/5summary",
+//		    url: "http://dreamwriter.webdev.com/app/summary",
+		    url: "http://localhost:3334/5summary",
 		    dataType:'json',
 		    data: JSON.stringify(JsonData2),
 		    success: function (data) {
@@ -270,8 +270,8 @@ $(function() {
             if(summary != '') {
               $.ajax({
 			    type: 'post',
-			    url: "http://dreamwriter.webdev.com/app/voice",
-//			    url: "http://localhost:3334/6voice",
+//			    url: "http://dreamwriter.webdev.com/app/voice",
+			    url: "http://localhost:3334/6voice",
 			    dataType:'json',
 			    data: JSON.stringify(JsonData),
 			    success: function (data) {
@@ -408,8 +408,8 @@ $(function() {
        	 }
 	         $.ajax({
 			    type: 'post',
-			    url: "http://dreamwriter.webdev.com/app/save",
-//			    url: "http://localhost:3334/7save",
+//			    url: "http://dreamwriter.webdev.com/app/save",
+			    url: "http://localhost:3334/7save",
 			    dataType:'json',
 			    data: JSON.stringify(JsonData2),
 			    success: function (data) {
@@ -524,8 +524,8 @@ $(function() {
 
 		 $.ajax({
 		    type: 'post',
-			url: "http://dreamwriter.webdev.com/app/publish",
-//			url: "http://localhost:3334/8publish",
+//			url: "http://dreamwriter.webdev.com/app/publish",
+			url: "http://localhost:3334/8publish",
 			dataType:'json',
 			data: JSON.stringify(JsonData2),
 			success: function (data) {
