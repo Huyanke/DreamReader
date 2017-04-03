@@ -1,91 +1,196 @@
-﻿input[type=range] {
-	-webkit-appearance: none;
-	width: 300px;
-	border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
-	background: -webkit-linear-gradient(#059CFA, #059CFA) no-repeat;
-	background-size: 0% 100%;
+﻿html {
+  width: 100%;
+  font-size: 20px;
+}
+body {
+  font-family: arial,"微软雅黑";
+  background-color: #e9f4ec;
+  
+}
+input{-webkit-appearance: none;}
+.share {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  /*height: 31.8rem;*/
+  height: 50%;
+  background: red;
+  position: relative;
+}
+.header img {
+	position: absolute;
+	top: 8%;
+	left: 15%;
+	width: 26rem;
+	text-align: center;
 }
 
-input[type=range]:focus {
-	outline: none;
+.animation img:nth-of-type(1),
+.animation img:nth-of-type(2),
+.animation img:nth-of-type(3),
+.animation img:nth-of-type(4){
+    -webkit-animation:1s 0.8s ease infinite alternate;
+    -webkit-animation-name:moves;
+    -moz-animation:1s 0.8s ease infinite alternate;
+    -moz-animation-name:moves;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-	height: 15px;
-	border-radius: 10px; /*将轨道设为圆角的*/
-	box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+	@-webkit-keyframes moves{
+	 0%{opacity:0}
+	 50%{opacity:0.5}
+	 100%{opacity:1}
+	}
+	@-moz-keyframes moves{
+	 0%{opacity:0}
+	 50%{opacity:0.5}
+	 100%{opacity:1}
+	}
+
+.section {
+	/*height: 28.3rem;*/
+	height: 43%;
+	background: red;
+
+}
+.message {
+  margin: 0 auto;
+  width: 32.2rem;
+}
+.old_range {
+	font-size: 1.1rem;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
+.robot {
+	font-size: 1.2rem;
+}
+.extent {
+	font-size: 1.3rem;
+  color: #d55c15
+}
+.new_text {
+  margin-top: 1rem;
+  width: 100%;
+  /*height: 13.5rem;*/
+  height: 20%;
+  background: pink;
+  overflow-y: scroll;
+  font-size: 1.5rem;
+}
+.radio {
+  margin: 0 auto;
+  width: 32.2rem;
+  height: 4.5rem;
+  padding-top: 1.5rem;
+}
+.cover {
+  float: left;
+  width: 3.3rem;
+  height: 3.3rem;
+  font-size: 1rem;
+}
+.cover img {
+  width: 3.2rem;
+   -webkit-tap-highlight-color:transparent; 
 }
 
-input[type=range]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 25px;
-	width: 25px;
-	margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
-	background: #ffffff; 
-	border-radius: 50%; /*外观设置为圆形*/
-	border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
-	box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+.stop {
+  display: none;
+ 
+}
+.music-nav {
+  float: left;
+  height: 3rem;
+  width: 28.8rem;
+}
+.music-nav input {
+  margin-left: 0.8rem;
+  width: 28rem;
+  height: 0.35rem;
+  background-color: #cad0cd;
+  -webkit-appearance: none;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-input[type=range]::-moz-range-track {
-	height: 15px;
-	border-radius: 10px; /*将轨道设为圆角的*/
-	box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+
+.music-nav input::-webkit-slider-thumb {
+  position: relative;
+  z-index: 3;
+  width: 1rem;
+  height: 1rem;
+  border: 0;
+  /*background-image: url(../img/thub2.png);*/
+  background-color: #fff;
+  background-size: 100%;
+  border-radius: 0.6rem;
+  -webkit-appearance: none;
+  -moz-box-shadow:0px 0.1rem 0.3rem #333;
+  -webkit-box-shadow:0px 0.1rem 0.3rem #333;
+  box-shadow:0px 0.1rem 0.3rem #333;
+ 
+   -webkit-appearance: none;
 }
 
-input[type=range]::-moz-range-thumb {
-	appearance: none;
-	height: 25px;
-	width: 25px;
-	margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
-	background: #ffffff; 
-	border-radius: 50%; /*外观设置为圆形*/
-	border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
-	box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+
+
+.play_ui {
+	width: 28rem;
+  height: 0.35rem;
+  position: relative;
+  margin-top: 1.5rem;
+}
+.play_ui input {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.shadow {
+	margin-left: 0.8rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+  height: 0.35rem;
+  background: #D55B15;
 }
 
-input[type=range]::-moz-range-progress {
-	background: linear-gradient(#059CFA, #059CFA) no-repeat;
-	height: 13px;	 
-	border-radius: 10px;
+.footer {
+	position: absolute;
+	bottom: 0;
+	left 0;
+	z-index: 4;
+  clear: both;
+  width: 100%;
+  height: 4.75rem;
+  line-height: 4.75rem;
+  background-color: #322b3a;
 }
+.footer img{
+  width: 3.25rem;
+  margin-left: 1.5rem;
+  vertical-align:middle;
 
-input[type=range]::-ms-track {
-	height: 25px;
-	border-radius: 10px;
-	box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112;
-	border-color: transparent; /*去除原有边框*/
-	color: transparent; /*去除轨道内的竖线*/
 }
-
-input[type=range]::-ms-thumb {
-	border: solid 0.125em rgba(205, 224, 230, 0.5);
-	height: 25px;
-	width: 25px;
-	border-radius: 50%;
-	background: #ffffff;
-	margin-top: -5px;
-	box-shadow: 0 .125em .125em #3b4547;
+.footer span {
+  font-size: 1.15rem;
+  color: #fff;
+  margin-left: 1.1rem;
 }
+.footer a {
 
-input[type=range]::-ms-fill-lower {
-	/*进度条已填充的部分*/
-	height: 22px;
-	border-radius: 10px;
-	background: linear-gradient(#059CFA, #059CFA) no-repeat;
-}
-
-input[type=range]::-ms-fill-upper {
-	/*进度条未填充的部分*/
-	height: 22px;
-	border-radius: 10px;
-	background: #ffffff;
-}
-
-input[type=range]:focus::-ms-fill-lower {
-	background: linear-gradient(#059CFA, #059CFA) no-repeat;
-}
-
-input[type=range]:focus::-ms-fill-upper {
-	background: #ffffff;
+  display: inline-block;
+  margin-left: 1.1rem;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 2.8rem;
+  text-align: center;
+  border: 0.1rem solid #d55c15;
+  border-radius: 0.5rem;
+  text-decoration: none;
 }

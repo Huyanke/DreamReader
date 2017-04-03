@@ -73,9 +73,10 @@ body {
   margin-top: 1rem;
   width: 100%;
   height: 13.5rem;
-  overflow-y: scroll;
   font-size: 1.5rem;
+  position:relative;
 }
+
 .radio {
   margin: 0 auto;
   width: 32.2rem;

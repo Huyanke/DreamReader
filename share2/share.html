@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/share.css"/>
 		<script src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="iscroll.js"></script>
 	</head>
 	<body>
        <div class="share">
@@ -23,14 +24,16 @@
            <div class="message">
              <span class="robot">Dreamwriter机器人写作</span>
              <span class="time"><em class="old_range">3小时前</em><em class="extent">0:48</em></span>
-             <div class="new_text">
-		                 农业部：转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，
-		                 转基因是传统育种技术的延伸发展，安全性是可控有保证的。
-		                 目前世界上没有发现一例被证实的转基因食品安全性问题。
-		                 转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，转基因是传统育
-                                 农业部：转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，
-		                 转基因是传统育种技术的延伸发展，安全性是可控有保证的。
-		                 目前世界上没有发现一例被证实的转基因食品安全性问题。
+             <div class="new_text" id="wrapper">
+             	<div id="scroller">
+			                 农业部：转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，
+			                 转基因是传统育种技术的延伸发展，安全性是可控有保证的。
+			                 目前世界上没有发现一例被证实的转基因食品安全性问题。
+			                 转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，转基因是传统育
+	                                 农业部：转基因食品安全性有保证农业部副部长张桃林7日在两会记者会上表示，
+			                 转基因是传统育种技术的延伸发展，安全性是可控有保证的。
+			                 目前世界上没有发现一例被证实的转基因食品安全性问题。
+                </div>
              </div>
            </div>
            <div class="radio">
@@ -40,7 +43,7 @@
 		      </div>
 		      <div class="music-nav">
 		      	 <div class="play_ui">
-		          <input type="range" min="0" max="0" step="0.4" value="0" id="scale">
+		          <input type="range" min="0" max="0" step="0.01" value="0" id="scale">
 		          <div class="shadow"></div>
 		      	 </div>
 		      </div>
@@ -50,7 +53,7 @@
          <footer class="footer">
          	<img src="img/head_s.png" alt="" />
          	<span >新闻超秘，为您量身定制的私人新闻秘书！</span>
-         	<a href="#">打开看看</a>
+         	<a href="#">立即下载</a>
          </footer>
        </div>
 	</body>
@@ -73,8 +76,20 @@
 	};
         
 
-    var height = window.body.clientHeight / 20 + 'rem';
-     $(".share").css("height",height);
+//  var height = window.body.clientHeight / 20 + 'rem';
+//   $(".share").css("height",height);
 </script>
 
+<script type="text/javascript">
 
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper', {
+		useTransition: true,
+		hideScrollbar: true
+	});
+	
+}
+
+document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+</script>
